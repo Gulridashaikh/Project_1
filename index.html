@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissor</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="game.css">
+        <link 
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+    />
+    </head>
+    <body>
+        <div class="game-section">
+            <div class="top-section">
+                <img class="logo" src="./images/logo.svg" atl="logo" />
+            
+                <div id="score-box1">
+                    <p id="score-label1">player score</p>
+                    <p id="player-score-value"></p>
+                </div>
+                <div id="score-box2">
+                    <p id="score-label2">house score</p>
+                    <p id="house-score-value"></p>
+                </div>
+            </div>
+        </div>     
+            <!-- <div id="heading", class="heading">
+                <div id="Score", class="Player_Score">
+                </div>
+                <h1>Rock</h1>
+                <h1>Paper</h1>
+                <h1>Scissor</h1>
+            </div> -->
+        <!-- </div> -->
+            <div id="triangle">
+                
+                <div id="rock" class="circle small rock">
+                    <div class="symbol"></div>   
+                </div>
+                <div id="paper" class="circle small paper">
+                    <div class="symbol"></div>      
+                </div>
+                <div id="scissors" class="circle small scissors">
+                    <div class="symbol"></div>      
+                </div>
+            </div>
+
+            <div id="player-pick-container">
+                <p class="player-picked-text">you picked</p>
+                <div id="player-selection" class="circle large">
+                    <div class="symbol"></div>
+                </div>
+            </div>
+            <div id="house-pick-container">
+                <p class="house-picked-text">the house picked</p>
+                <div id="placeholder"></div>
+                <div id="house-selection" class="circle large">
+                    <div class="symbol"></div>
+                </div>
+            </div>
+
+            <p id="win-text">you win</p>
+            <p id="lose-text">you lose</p>
+            <p id="draw-text">draw</p>
+
+            <div id="play-again-button">
+                <p class="play-again-text">play again</p>
+            </div>
+        </div>
+    
+        <div id="rules-button" class="button"><p class="button-text">rules</p></div>
+
+        <div id="rules-modal" class="modal">
+            <div class="modal-content">
+                <p id="rules-title">rules</p>
+                <img id="rules-image" src="./images/image-rules.svg" alt="rules" />
+                <img id="close-icon" src="./images/icon-close.svg" alt="close" />
+            </div>
+        </div>
+
+        <div id="reset-button" class="button"><p class="button-text">reset</p></div>
+        <script src="game2.js"></script>
+    </body>
+</html>
